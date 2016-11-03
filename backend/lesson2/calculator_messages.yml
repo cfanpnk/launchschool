@@ -1,0 +1,4 @@
+welcome: "Welcome to Calculator! Enter your name:"
+valid_name: "Make sure to end a valid name."
+first_number: Please enter the first number:"
+not_valid_number: Hmm... that doesn't look like a valid number
