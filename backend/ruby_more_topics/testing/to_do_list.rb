@@ -133,3 +133,41 @@ class TodoList
     end
   end
 end
+
+# given
+todo1 = Todo.new("Buy milk")
+todo2 = Todo.new("Clean room")
+todo3 = Todo.new("Go to gym")
+list = TodoList.new("Today's Todos")
+
+# add
+list.add(todo1)                 # adds todo1 to end of list, returns list
+list.add(todo2)                 # adds todo2 to end of list, returns list
+list.add(todo3)                 # adds todo3 to end of list, returns list
+
+# p list.find_by_title("Go to gymddd")
+
+# todo1.done!
+# todo2.done!
+# puts list.all_done
+# puts list.all_not_done
+# list.mark_done("Go to gym")
+# list.mark_all_done
+# list.mark_all_undone
+# puts list
+
+
+
+# results = list.select { |todo| todo.done? }    # you need to implement this method
+
+# puts results.inspect
+
+# puts list
+
+# list.pop
+
+# puts list
+
+# list.mark_done_at(1)
+
+# puts list
