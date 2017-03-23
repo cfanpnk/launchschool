@@ -12,9 +12,9 @@ class GoodDog
   end
 
   def change_info(n, h, w)
-    @name = n
-    @height = h
-    @weight = w
+    self.name = n
+    self.height = h
+    self.weight = w
   end
 
   def info
@@ -27,4 +27,5 @@ class GoodDog
 end
 
 sparky = GoodDog.new('Sparky', '12 inches', '10 lbs')
-puts sparky
+sparky.change_info('Spartacus', '24 inches', '45 lbs')
+puts sparky.info
