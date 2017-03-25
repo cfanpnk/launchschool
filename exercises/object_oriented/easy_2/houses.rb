@@ -1,16 +1,13 @@
 class House
+  include Comparable
   attr_reader :price
 
   def initialize(price)
     @price = price
   end
 
-  def <(other)
-    self.price < other.price
-  end
-
-  def >(other)
-    self.price > other.price
+  def <=>(other)
+    self.price <=> other.price
   end
 end
 
