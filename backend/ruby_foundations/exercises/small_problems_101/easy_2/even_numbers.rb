@@ -1,0 +1,1 @@
+(1..99).select { |i| puts i if i.odd? }
