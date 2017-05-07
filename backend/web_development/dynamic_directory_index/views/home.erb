@@ -1,0 +1,10 @@
+<html>
+  <body>
+    <% @files.each do |filename, path| %>
+      <li><a href = <%= path %> ><%= filename %></a></li>
+    <% end %>
+
+    <p>
+    <a href = <%= @sort_link %>><%= @sort_text %></a>
+  </body>
+</html>

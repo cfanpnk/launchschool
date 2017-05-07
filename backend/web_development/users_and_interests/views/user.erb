@@ -1,0 +1,9 @@
+<h2>Email: <%= @info[:email] %> </h2>
+<h2>Interests: <%= @info[:interests].join(", ") %></h2>
+
+<p>
+  <h2>Other users:</h2>
+  <% @other_users.each do |user, _| %>
+    <li><a href="/<%= user%>"><%= user %></a></li>
+  <% end %>
+</p>
