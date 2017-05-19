@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+<title>Index Page</title>
+<link rel="stylesheet" href="/stylesheets/cms.css">
+</head>
+<body>
+
+<% if session[:message] %>
+  <div class="message">
+    <p><%= session.delete(:message) %></p>
+  </div>
+<% end %>
+
+<div>
+<%= yield %>
+</div>
+</body>
+</html>
