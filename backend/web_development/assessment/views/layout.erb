@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<head>
+<title>170 Assessment</title>
+</head>
+<body>
+
+<% if session[:message] %>
+  <div class="message">
+    <p><%= session.delete(:message) %></p>
+  </div>
+<% end %>
+
+<div>
+<%= yield %>
+</div>
+</body>
+</html>
