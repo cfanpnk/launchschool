@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Basic HTML Practice Problems: Forms</title>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <form action="" method="get">
+      <fieldset>
+        <dl>
+          <dt><label for="name">Your Name</label></dt>
+          <dd><input type="text" id="name" name="name" required /></dd>
+          <dt><label for="email">Email</label></dt>
+          <dd><input type="text" id="name" name="email" required /></dd>
+          <dt><label>Phone Number</label></dt>
+          <dd><input type="tel" id="phone" required /></dd>
+          <dt><label>Message</label></dt>
+          <dd><textarea rows="6" cols="80" id="msg" name="msg" required></textarea></dd>
+        </dl>
+        <input type="submit" value="Send Message" />
+        <input type="reset" value="Clear" />
+      </fieldset>
+    </form>
+
+    <form action="" method="get">
+      <fieldset>
+        <label for="search_text">Search for</label>
+        <input type="search" id="search_text" name="search_text" />
+        <label><input type="radio" name="filter" value="tv" />TV</label>
+        <label><input type="radio" name="filter" value="movies" />Movies</label>
+        <label><input type="radio" name="filter" value="music" />Music</label>
+        <input type="button" value="Search" />
+      </fieldset>
+    </form>
+
+    <form action="" method="get">
+      <fieldset>
+        <dl>
+          <dt>Movie</dt>
+          <dd>
+            <select name="movie_filter" id="movie_filter"> <!--Supplement an id here instead of using 'name'-->
+              <option value="looper" selected>Looper</option> 
+              <option value="fronzen">Frozen</option>
+              <option value="tommy_boy">Tommy Boy</option>
+            </select>
+          </dd>
+          <dt>Rating</dt>
+          <dd><input type="range" min="1" max="5"/></dd>
+        </dl>
+        <div>
+          <input type="checkbox" id="favorites" name="favorites" checked />
+          <label for="favorites">Add to my favorites</label>
+        </div>
+        <input type="submit" value="Rate movie" />
+      </fieldset>
+    </form>
+  </body>
+</html>
