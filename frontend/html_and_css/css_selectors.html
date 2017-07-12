@@ -12,8 +12,39 @@
       p {
         font-size: 18px;
       }
-      li {
-        border-bottom: 1px solid #0066cc;
+      main li ~ li{
+        border-top: 1px solid #0066cc;
+      }
+      article p {
+        font-family: sans-serif;
+      }
+      .subheading {
+        background-color: #e0e0e0;
+      }
+      #intro {
+        text-decoration: underline;
+        font-size: 20px;
+      }
+      main ul li ~ li {
+        border-top-style: dotted;
+      }
+      header ul {
+        display: none;
+      }
+      header > ul {
+        display: block;
+      }
+      h2 + p {
+        padding-top: 20px;
+      }
+      header li:hover > ul {
+        display: block;
+      }
+      input[type="text"]:focus {
+        background-color: #fff9b5;
+      }
+      input[type="checkbox"]:checked + span {
+        font-weight: bold;
       }
     </style>
   </head>
