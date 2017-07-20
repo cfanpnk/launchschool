@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Practice Problems: Positioning</title>
+  <meta charset="utf-8">
+  <style type="text/css">
+    .positioned {
+      box-sizing: border-box;
+      position: absolute;
+      background-color: #FFFFFF;
+      width: 400px;
+      margin-left: -200px;
+      top: 20px;
+      left: 50%;
+      padding: 20px 10px;
+      z-index: 2;
+    }
+    .fixed {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: 1;
+      background: rgba(0, 0, 0, .6);
+    }
+    .highlight {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: #fcfc99;
+      left: -10px;
+      top: -10px;
+    }
+  </style>
+</head>
+<body>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ultricies vulputate dolor. Pellentesque quis aliquam nulla. Vivamus ultrices dapibus turpis eu sollicitudin. Vivamus pulvinar congue metus id hendrerit. Sed ac felis sollicitudin, gravida sapien sed, finibus velit. Donec scelerisque turpis ac nulla euismod tempor. Pellentesque non tincidunt lorem. Nunc eget dui urna. Maecenas scelerisque tristique lectus, in fermentum leo pellentesque sit amet. Nullam iaculis quis lectus non lacinia. Nullam rutrum imperdiet massa, vel rhoncus nulla commodo et. Aenean vitae leo ut est faucibus finibus.
+  </p>
+  <p>
+    Mauris suscipit tellus id sodales venenatis. In consectetur dignissim ligula, ut eleifend arcu interdum ac. Pellentesque egestas pellentesque arcu, placerat lacinia ipsum tincidunt vitae. Nulla consequat pellentesque pulvinar. Vestibulum in aliquam leo. Donec et nisi euismod, condimentum ante quis, lobortis augue. Aenean tristique turpis id tellus ornare tincidunt. Curabitur eleifend, nisi nec varius vulputate, ligula ligula suscipit massa, sit amet convallis mauris justo eget velit. Suspendisse pulvinar pulvinar arcu non feugiat. Nunc ante ex, sollicitudin sit amet rhoncus vitae, efficitur sed purus. Phasellus finibus efficitur sem, vitae commodo metus dapibus at. Ut a metus et tortor semper iaculis a vel lacus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+  </p>
+  <p>
+    Sed quis sem et diam dapibus luctus nec eget turpis. Proin sagittis sagittis ante at pharetra. Maecenas viverra lectus ante, eu iaculis ipsum lobortis ac. Phasellus vitae diam blandit, tempor tellus at, malesuada neque. Curabitur consequat, libero a egestas ultricies, dui est porttitor purus, vitae vehicula diam risus eu turpis. Morbi efficitur ipsum sed magna suscipit, eu mattis augue vulputate. Fusce accumsan ut metus eu varius. Suspendisse et ante sodales, blandit velit nec, euismod sapien. Maecenas vehicula lacus ligula, sit amet accumsan tortor vulputate sit amet. Nunc varius quam mauris, sed tempor leo consequat vel. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas sed nulla eu risus pretium facilisis eu ut dolor. Aliquam vitae feugiat enim. Quisque nec lacus ac augue dignissim semper id eget sapien. Phasellus sed lacus quis odio euismod blandit sit amet ut dui.
+  </p>
+  <div class="fixed">
+    
+  </div>
+  <div class="positioned">
+    <div class="highlight">
+      
+    </div>
+    I'm positioned!
+  </div>
+</body>
+</html>

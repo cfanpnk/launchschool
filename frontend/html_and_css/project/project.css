@@ -1,0 +1,213 @@
+    * {
+      font-family: Helvetica, sans-serif;
+      box-sizing: border-box;
+    }
+    #lesson {
+      border: 2px solid grey;
+      padding: 20px 15px;
+      width: 1000px;
+      margin: 0 auto;
+    }
+    h1, h2 {
+      color: #CE4A4A;
+      font: bold 24px Helvetica, sans-serif;
+    }
+    p {
+      line-height: 35px;
+      margin-bottom: 25px;
+    }
+    .bold {
+      color: #545459;
+      font: bold 16px Helvetica;
+    }
+    .border {
+      width: 500px;
+      border: 2px dashed grey;
+      padding: 30px;
+      margin: 45px;
+    }
+    .border a {
+      text-decoration: none;
+      color: #333333;
+    }
+    .inline-margin a {
+      margin: 30px;
+    }
+    .inline-padding a {
+      padding: 30px;
+      background-color: green;
+    }
+    .border .inline-float {
+      padding: 60px;
+    }
+    .inline-float a {
+      float: left;
+      width: 100px;
+      height: 50px;
+      margin: 30px;
+      padding-top: 30px;
+      border: solid 1px;
+      background-color: green;
+      text-align: center;
+      color: white;
+    }
+    .cf::after {
+      display: block;
+      content: "";
+      clear: both;
+    }
+
+    .wrapper .box-1 {
+      background-color: #1E90FF;
+      color: white;
+    }
+    .wrapper .box-2 {
+      height: 60px;
+      padding: 20px;
+      margin: 20px;
+      background-color: #008000;
+      color: white;
+    }
+    .wrapper .box-3 {
+      width: 90px;
+      background-color: #FF6347;
+      color: white;
+    }
+
+    .fl-1 {
+      float: left;
+      background-color: #1E90FF;
+      color: white;
+    }
+
+    .fl-2 {
+      float: right;
+      background-color: #FF6347;
+      color: white;
+    }
+
+    .fl-3 {
+      float: left;
+      background-color: #1E90FF;
+      color: white;
+      width: 400px;
+      height: 100px;
+      text-align: center;
+      padding-top: 40px;
+    }
+
+    .fl-4 {
+      float: right;
+      background-color: #FF6347;
+      color: white;
+      width: 400px;
+      height: 100px;
+      text-align: center;
+      padding-top: 40px;
+    }
+
+    .bl-a {
+      display: block;
+      background-color: #1E90FF;
+      color: white;
+      margin: 10px;
+      height: 40px;
+      text-decoration: none;
+      text-align: center;
+      padding-top: 10px;
+    }
+
+    .nav a {
+      display: inline-block;
+      background-color: #1E90FF;
+      color: white;
+      height: 50px;
+      width: 150px;
+      margin: 10px;
+      text-decoration: none;
+      text-align: center;
+      padding-top: 15px;
+    }
+
+    .flbx-1 {
+      float: left;
+      background-color: #FF6347;
+      color: white;
+      width: 50%;
+      text-align: center;
+      padding-top: 40px;
+      height: 100px;
+    }
+
+    .flbx-2 {
+      float: left;
+      background-color: #1E90FF;
+      color: white;
+      width: 50%;
+      text-align: center;
+      padding-top: 40px;
+      height: 100px;
+    }
+
+    .flbx-3 {
+      background-color: #2E8B57;
+      color: white;
+      width: 100%;
+      text-align: center;
+      padding-top: 40px;
+      height: 100px;
+      clear: both;
+    }
+
+    .pos ul {
+      margin: 0 0 45px 40px;
+    }
+
+    .pos ul li {
+      font-style: italic;
+      margin-bottom: 10px;
+    }
+
+    .fixed {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      height: 70px;
+      width: 200px;
+      background-color: #1E90FF;
+      color: white;
+      text-align: center;
+      padding-top: 25px;
+      border-radius: 10px;
+      margin: 0 0 30px 30px;
+    }
+
+    .rel-box {
+      position: relative;
+      background-color: #FF6347;
+      color: white;
+      text-align: center;
+      height: 70px;
+      width: 400px;
+      padding-top: 25px;
+      border-radius: 10px;
+      left: -65px;
+      top: 60px;
+    }
+
+    .pos-absolute {
+      position: relative;
+    }
+
+    .abs-box1 {
+      position: absolute;
+      background-color: #008000;
+      color: white;
+      text-align: center;
+      height: 70px;
+      width: 400px;
+      padding-top: 25px;
+      border-radius: 10px;
+      top: -20px;
+      left: 250px;
+    }
