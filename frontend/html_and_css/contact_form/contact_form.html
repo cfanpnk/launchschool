@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Form</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="contact_form.css">
+</head>
+<body>
+  <form action="#" method="post">
+    <div>
+      <label class="main_label">
+        First Name
+        <input type="text" name="first_name">
+      </label>
+    </div>
+    <div>
+      <label class="main_label">
+        Last Name
+        <input type="text" name="last_name">
+      </label>
+    </div>
+    <div>
+      <label class="main_label">
+        Email Address
+        <input type="email" name="email" autocomplete="off" autocorrect="off" autocapitalize="none">
+      </label>
+    </div>
+    <div>
+      <label class="main_label">
+        City
+        <input type="text" name="city">
+      </label>
+    </div>
+    <div>
+      <label class="main_label">
+        State
+        <select name="state">
+          <option>AK</option>
+          <option>AL</option>
+          <option>AR</option>
+          <option>AZ</option>
+          <option>CA</option>
+          <option>CO</option>
+          <option>CT</option>
+          <option>DC</option>
+          <option>DE</option>
+          <option>FL</option>
+          <option>GA</option>
+          <option>HI</option>
+          <option>IA</option>
+          <option>ID</option>
+          <option>IL</option>
+          <option>IN</option>
+          <option>KS</option>
+          <option>KY</option>
+          <option>LA</option>
+          <option>MA</option>
+          <option>MD</option>
+          <option>ME</option>
+          <option>MI</option>
+          <option>MN</option>
+          <option>MO</option>
+          <option>MS</option>
+          <option>MT</option>
+          <option>NC</option>
+          <option>ND</option>
+          <option>NE</option>
+          <option>NH</option>
+          <option>NJ</option>
+          <option>NM</option>
+          <option>NV</option>
+          <option>NY</option>
+          <option>OH</option>
+          <option>OK</option>
+          <option>OR</option>
+          <option>PA</option>
+          <option>RI</option>
+          <option>SC</option>
+          <option>SD</option>
+          <option>TN</option>
+          <option>TX</option>
+          <option>UT</option>
+          <option>VA</option>
+          <option>VT</option>
+          <option>WA</option>
+          <option>WI</option>
+          <option>WV</option>
+          <option>WY</option>
+        </select>
+      </label>
+    </div>
+    <div>
+      <label class="main_label">
+        Zip
+        <input type="number" name="zip" min="0" max="99999">
+      </label>
+    </div>
+    <div>
+      <label class="main_label">Which of these colors do you most prefer?</label>
+      <label class="sub_label">
+        <input type="radio" name="colors" value="red" checked />
+        Red
+      </label>
+      <label class="sub_label">
+        <input type="radio" name="colors" value="orange"/>
+        Orange
+      </label>
+      <label class="sub_label">
+        <input type="radio" name="colors" value="yellow"/>
+        Yellow
+      </label>
+      <label class="sub_label">
+        <input type="radio" name="colors" value="green"/>
+        Green
+      </label>
+      <label class="sub_label">
+        <input type="radio" name="colors" value="blue"/>
+        Blue
+      </label>
+      <label class="sub_label">
+        <input type="radio" name="colors" value="indigo"/>
+        Indigo
+      </label>
+      <label class="sub_label">
+        <input type="radio" name="colors" value="violet"/>
+        Violet
+      </label>
+    </div>
+    <div>
+      <label class="main_label">What web technologies do you want to hear more about?</label>
+      <label class="checkbox_label">
+        <input type="checkbox" name="technologies" value="html"/>
+        HTML
+      </label>
+      <label class="sub_label">
+        <input type="checkbox" name="technologies" value="css"/>
+        CSS
+      </label>
+      <label class="sub_label">
+        <input type="checkbox" name="technologies" value="javascript"/>
+        JavaScript
+      </label>
+      <label class="sub_label">
+        <input type="checkbox" name="technologies" value="ruby"/>
+        Ruby
+      </label>
+      <label class="sub_label">
+        <input type="checkbox" name="technologies" value="rails"/>
+        Rails
+      </label>
+    </div>
+    <div>
+      <label class="main_label">
+        Comments
+        <textarea rows="6" cols="80"></textarea>
+      </label>
+    </div>
+    <div>
+      <input type="hidden" name="timestamp" value="2017-07-26" />
+      <input type="submit" value="Send" />
+      <input type="reset" />
+    </div>
+  </form>
+</body>
+</html>

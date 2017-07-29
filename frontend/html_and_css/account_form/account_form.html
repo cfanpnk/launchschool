@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Project: Advanced Form Layout</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="account_form.css">
+</head>
+<body>
+  <form action="" method="post">
+    <h1>Create Your Profile</h1>
+    <div class="main">
+      <h2>Personal Info</h2>
+      <label class="name" for="first_name">Your Name</label>
+      <input class="first_name" type="text" name="first_name" id="first_name" placeholder="First" />
+      <input class="last_name" type="text" name="last_name" id="last_name" placeholder="Last" />
+      <label class="email" for="email">Email</label>
+      <input class="email" type="email" name="email" id="email" />
+    </div>
+    <div class="main social">
+      <h2>Social Media Accounts</h2>
+      <label class="social" for="facebook">Facebook</label>
+      <label class="social" for="linkedin">Linkedin</label>
+      <label class="social" for="twitter">Twitter</label>
+      <input class="social" type="text" name="facebook" id="facebook"/>
+      <input class="social" type="text" name="twitter" id="twitter" />
+      <input class="social" type="text" name="linkedin" id="linkedin" />
+    </div>
+    <div class="main account">
+      <h2>Account Info</h2>
+      <label class="profile" for="profile_name">Profile Name</label>
+      <input class="profile" type="text" name="profile_name" id="profile_name" />
+      <label class="password" for="password">Password</label>
+      <label class="confirm" for="confirm">Confirm Password</label>
+      <input class="password" type="password" name="password" id="password" />
+      <input class="confirm" type="password" name="confirm" id="confirm" />
+    </div>
+    <div class="main">
+      <h2>Bio</h2>
+      <textarea rows=6 cols=80></textarea>
+    </div>
+    <div class="main submit">
+      <input type="checkbox" name="agreement" id="agreement">
+      <label for="agreement">I agree to treat other users with respect, and will not say anything at all if I have nothing nice to say.</label>
+      <input class="btn" type="submit" name="create" value="Create Account" />
+    </div>
+  </form>
+</body>
+</html>
