@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  font: normal 18px Helvetica, Arial, sans-serif;
+  color: #333333;
+}
+h1 {
+  margin-top: 0;
+  font-size: 24px;
+}
+h2 {
+  margin-top: 0;
+  font-size: 20px;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+#column {
+  margin: 0 140px 0 160px;
+}
+
+header {
+  float: left;
+  width: 160px;
+  height: 100vh;
+  padding: 15px;
+  margin-left: -160px;
+  font-size: 14px;
+  background: #2c3e50;
+  box-sizing: border-box;
+}
+
+header a {
+  text-decoration: none;
+  color: #ecf0f1;
+}
+
+header li {
+  padding-bottom: 15px;
+}
+
+header .nav:before {
+  display: inline-block;
+  content: "";
+  vertical-align: middle;
+  margin-right: 5px;
+  background: transparent url("icons_nav.png") 0 0 no-repeat;
+}
+
+header .home:before {
+  height: 26px;
+  width: 27px;
+  background-position: 0 0;
+}
+
+header .home:hover:before {
+  background-position: -27px 0;
+}
+
+header .photos:before {
+  height: 20px;
+  width: 27px;
+  background-position: 0 -26px;
+}
+
+header .photos:hover:before {
+  background-position: -27px -26px;
+}
+
+header .contact:before {
+  height: 16px;
+  width: 27px;
+  background-position: 0 -46px;
+}
+
+header .contact:hover:before {
+  background-position: -27px -46px;
+}
+
+footer .social:before {
+  display: inline-block;
+  content: "";
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  margin-right: 5px;
+  background: transparent url("icons_social.png") 0 0 no-repeat;
+  background-size: 24px auto;
+}
+
+footer .twitter:before {
+  background-position: 0 0;
+}
+
+footer .facebook:before {
+  background-position: 0 -24px;
+}
+
+footer .instagram:before {
+  background-position: 0 -48px;
+}
+
+footer .social:hover:before {
+  background-color: #00bf8f;
+}
+
+main {
+  float: left;
+  width: 100%;
+  padding: 25px;
+  box-sizing: border-box;
+}
+
+footer {
+  float: right;
+  width: 140px;
+  height: 100vh;
+  padding: 15px;
+  margin-right: -140px;
+  font-size: 12px;
+  background: #e74c3c;
+  box-sizing: border-box;
+}
+footer li {
+  padding-bottom: 10px;
+}
+footer a {
+  display: block;
+  padding: 5px;
+  text-decoration: none;
+  color: #2980b9;
+  background: #ffffff;
+}

@@ -1,0 +1,184 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #2f2840;
+  background-image: url("images/bg_body.gif");
+  font: normal 20px Helvetica, Arial, sans-serif;
+}
+
+header {
+  height: 517px;
+  width: 100%;
+}
+
+header .logo {
+  display: block;
+  padding: 73px 0 110px 0;
+  margin: 0 auto;
+}
+
+header nav {
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  margin-right: 96px;
+  font: normal 26px Arial;
+  text-decoration: none;
+  color: #cacaca;
+}
+
+header a.active{
+  color: #6db9ff;
+  font-weight: bold;
+}
+
+main {
+  margin: 0 auto;
+  background-color: white;
+  width: 100%;
+  padding: 110px 0;
+}
+
+article {
+  box-sizing: border-box;
+  text-align: justify;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 110px;
+}
+
+article p {
+  padding: 0 100px 0 100px;
+}
+h2 {
+  font-size: 36px;
+  text-align: center;
+  padding-bottom: 45px;
+}
+h3 {
+  font-size: 24px;
+  text-align: center;
+  margin: 0;
+  color: #3e98b2;
+  padding-bottom: 23px;
+}
+footer {
+  background-color: #e7e7e7;
+  text-align: center;
+  padding-bottom: 80px;
+  width: 100%;
+}
+
+footer ul {
+  margin: 0;
+}
+footer li {
+  display: inline-block;
+  list-style: none;
+}
+
+footer div {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 80px 0 46px 0;
+  font: normal 20px Arial;
+  color: #B5B2B2;
+}
+footer .contact {
+  display: inline-block;
+  content: "";
+  width: 46px;
+  height: 46px;
+  background: transparent url("images/icons_social-media.png") 0 0 no-repeat;
+  margin-right: 128px;
+}
+
+footer .twitter {
+  background-position: 0 0;
+}
+
+footer .facebook {
+  background-position: 0 -46px;
+}
+
+footer .email {
+  background-position: 0 -92px;
+}
+
+footer .instagram {
+  background-position: 0 100%;
+}
+
+main .photo {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 28px;
+  max-width: 1000px;
+  padding-bottom: 55px;
+}
+
+main .proj_name {
+  font-size: 24px;
+  margin: 0;
+  color: #5159B2;
+  padding-bottom: 23px;
+}
+
+main li {
+  display: inline-block;
+  margin-right: 65px;
+  list-style: none;
+  color: #5159B2;
+  font: normal 24px Arial;
+}
+
+main .team_photo {
+  display: block;
+  padding-bottom: 20px;
+}
+
+main .team_photos {
+  text-align: center;
+  padding-top: 90px;
+}
+
+
+@media screen and (max-width: 875px) {
+  main li {
+    width: 40%;
+    padding: 0 0 30px 0;
+  }
+  main .team_photo {
+    margin: 0 auto 25px auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header .logo {
+    padding-top: 40px;
+  }
+}
+
+main .member_name {
+  display: inline-block;
+  width: 141px;
+  margin-right: 65px;
+  list-style: none;
+  color: #5159B2;
+  font: normal 24px Arial;
+}
+
+main .member_names {
+  text-align: center;
+}
