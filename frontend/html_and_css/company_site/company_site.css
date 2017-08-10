@@ -106,32 +106,34 @@ main .proj_name {
 
 main li {
   display: inline-block;
-  margin-right: 65px;
   list-style: none;
   color: #5159B2;
   font: normal 24px Arial;
 }
 
-main .team_photo {
-  display: block;
-  padding-bottom: 20px;
+.team {
+  padding-bottom: 128px;
 }
 
-main .team_photos {
-  text-align: center;
-  padding-top: 90px;
+.team p {
+  text-align: justify;
 }
 
-main .member_name {
+.team li {
   display: inline-block;
-  width: 141px;
-  margin-right: 65px;
-  list-style: none;
-  color: #5159B2;
-  font: normal 24px Arial;
+  padding: 0 0 30px 0;
+  width: 25%;
+  text-align: center;
 }
 
-main .member_names {
+.team li img {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 26px;
+}
+
+.team ul {
+  padding: 10% 10% 0 10%;
   text-align: center;
 }
 
@@ -185,12 +187,11 @@ footer .instagram {
 }
 
 @media (max-width: 875px) {
-  main li {
+  .team li {
     width: 50%;
-    margin: 0 0 30px 0;
   }
-  main .team_photo {
-    margin: 0 auto;
+  .team li img {
+    padding-bottom: 5px;
   }
 }
 
@@ -264,7 +265,7 @@ footer .instagram {
   h3 {
     font-size: 20px;
   }
-  main .team_photos {
+  .team {
     padding-top: 40px;
   }
   footer {
