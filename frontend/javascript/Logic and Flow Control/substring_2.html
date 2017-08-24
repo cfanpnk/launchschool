@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Substring(2)</title>
+</head>
+<body>
+  <script type="text/javascript">
+    function substring(string, start, end) {
+      var length;
+      var min;
+      if (start < 0 || typeof(start) !== 'number') {
+        start = 0;
+      }
+      if (end < 0 || typeof(start) != 'number') {
+        end = 0;
+      }
+      if (start === end) {
+        return '';
+      }
+      if (start > string.length) {
+        start = string.length;
+      }
+      if (end > string.length) {
+        end = string.length;
+      }
+      if (end === undefined) {
+        length = string.length - start;
+        min = start;
+      } else {
+        length = Math.abs(start - end);
+        min = start < end ? start : end;
+      }
+
+      var result = '';
+      for (var i = 0; i < length; i++) {
+        result += string[min + i];
+      }
+      return result;
+    }
+
+    var string = 'hello world';
+    console.log(substring(string, 2, 4));    // "ll"
+    console.log(substring(string, 4, 2));    // "ll"
+    console.log(substring(string, 0, -1));   // ""
+    console.log(substring(string, 2));       // "llo world"
+    console.log(substring(string, 'a'));     // "hello world"
+    console.log(substring(string, 8, 20));   // "rld"
+
+  </script>
+</body>
+</html>

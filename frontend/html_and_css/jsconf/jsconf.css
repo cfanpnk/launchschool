@@ -1,0 +1,158 @@
+@import url("whitespace-reset.css");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  font-family: "Open Sans", Arial, sans-serif;
+  color: #5C5B56;
+}
+
+header {
+  width: 100%;
+  height: 483px;
+  width: 100%;
+  background: transparent url("front.jpg") 0 0 no-repeat;
+  text-align: center;
+}
+
+header nav {
+  width: 100%;
+  border-top: 10px solid #F5F5F5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+}
+
+header ul {
+  max-width: 100%;
+  margin: 10px 0;
+  text-align: center;
+}
+
+header li {
+  display: inline-block;
+  list-style: none;
+  padding: 0 27px;
+}
+
+header li a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #444;
+  font: normal 13px "Open Sans", Arial, sans-serif;
+}
+
+header img {
+  position: relative;
+  top: 150px;
+  width: 80px;
+  height: 80px;
+}
+
+header h1 {
+  font-size: 76px;
+  color: #ffffff;
+  position: relative;
+  top: 150px;
+}
+
+header h2 {
+  font-size: 31px;
+  color: #ffffff;
+  text-transform: uppercase;
+  position: relative;
+  top: 150px;
+}
+
+main {
+  margin: 0 30px;
+}
+
+main section {
+  width: 100%;
+  padding: 59px 0 0 0;
+  text-align: center;
+  border-top: 1px solid #F5F5F5;
+  border-bottom: 1px solid #F5F5F5;
+}
+
+main h1 {
+  font: normal 48px "Open Sans", Arial, sans-serif;
+  color: #5C5B56;
+  margin-bottom: 30px;
+}
+
+.tickets {
+  padding-bottom: 69px;
+}
+
+.tickets .btn {
+  display: inline-block;
+  width: 231px;
+  height: 42px;
+  background-color: #006000;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 30px;
+  margin-top: 13px;
+}
+
+.speakers {
+  padding-bottom: 65px;
+}
+
+.speakers ul {
+  max-width: 1082px;
+  width: 100%;
+  height: 1562px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.speakers li {
+  display: inline-block;
+  width: 282px;
+  height: 380px;
+  margin: 5px 6.5px;
+  border: 1px solid #F5F5F5;
+}
+
+.speakers img {
+  width: 100%;
+}
+
+.speakers h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #008000;
+  margin: 30px 0 8px 0;
+}
+
+.schedule table {
+  max-width: 960px;
+  font-size: 24px;
+  margin: 0 auto;
+  border-collapse: separate;
+}
+
+.schedule tr {
+  border-top: 10px solid red;
+  border-bottom: 10px solid red;
+}
+
+.schedule td {
+  border-top: 1px solid #EFEFEF;
+  padding: 10px;
+  text-align: left;
+}
+
+/*@media (max-width: 943px) {
+  .speakers ul {
+    width: 894px;
+  }
+}*/

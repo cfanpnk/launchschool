@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Trimming Spaces</title>
+</head>
+<body>
+  <script type="text/javascript">
+    function leftTrim(str) {
+      var result = '';
+      var copyMode = false;
+      for (var i = 0; i < str.length; i++) {
+        if (str[i] !== ' ') {
+          result += str[i];
+          copyMode = true;
+        } else if (str[i] === ' ' && copyMode) {
+          result += str[i];
+        } 
+      }
+      return result;
+    }
+
+    function rightTrim(str) {
+      var result = '';
+      var copyMode = false;
+      for (var i = str.length - 1; i >= 0; i--) {
+        if (str[i] !== ' ') {
+          result = str[i] + result; 
+          copyMode = true;
+        } else if (str[i] === ' ' && copyMode) {
+          result = str[i] + result;
+        } 
+      }
+      return result;
+    }
+
+    function trim(str) {
+      return '"' + rightTrim(leftTrim(str)) + '"';
+    }
+
+    console.log(trim('  abc  '));  // "abc"
+    console.log(trim('abc   '));   // "abc"
+    console.log(trim(' ab c'));    // "ab c"
+    console.log(trim(' a b  c'));  // "a b  c"
+    console.log(trim('      '));   // ""
+    console.log(trim(''));         // ""
+  </script>
+</body>
+</html>

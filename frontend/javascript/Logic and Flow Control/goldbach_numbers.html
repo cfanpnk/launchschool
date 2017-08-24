@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Goldbach Numbers</title>
+</head>
+<body>
+  <script type="text/javascript">
+    // 1. Get all primes smaller than the provided number
+    // 2. Get all unique pairs of two prime numbers
+    // 3. If the sum of the pair equal to the provided number, return it.
+    function isPrime(num) {
+      if (num === 1 || num === 0) {
+        return false;
+      }
+      for (var i = 2; i < num; i++) {
+        if (num % i === 0) {
+          return false;
+        }
+      }
+      return true;
+    }
+    function isOdd(num) {
+      return num % 2 === 1
+    }
+    function checkGoldbach(num) {
+      if (num < 4) {
+        console.log('null');
+        return;
+      }
+      var primeNumbers = [];
+      for (var i = 1; i < num; i++) {
+        if (isPrime(i)) {
+          primeNumbers.push(i);
+        }
+      }
+      for (var i = 0; i < primeNumbers.length; i++) {
+        if (primeNumbers[i] > num - primeNumbers[i]) {
+          break;
+        } else if (primeNumbers.includes(num - primeNumbers[i])) {
+          console.log(primeNumbers[i] + ' ' + (num - primeNumbers[i]));
+        }
+      }
+    }
+
+
+    checkGoldbach(3);
+    // logs: null
+
+    checkGoldbach(4);
+    // logs: 2 2
+
+    checkGoldbach(12);
+    // logs: 5 7
+
+    checkGoldbach(100);
+    // logs:
+    // 3 97
+    // 11 89
+    // 17 83
+    // 29 71
+    // 41 59
+    // 47 53
+  </script>
+</body>
+</html>

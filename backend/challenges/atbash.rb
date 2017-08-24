@@ -1,4 +1,3 @@
-class Atbash
   MAX = ("a".ord + "z".ord).freeze
 
   def self.encode(input)

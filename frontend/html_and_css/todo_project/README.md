@@ -1,0 +1,4 @@
+##Assumptions
+1. When the modal form is popped up, you have to click either of the buttons to close the form. Ideally, there should be a "X" button somewhere that can close the popup. But I didn't want to be creative on the assessment. 
+2. The `nav` pane has fixed width regardless of the size of the screens.
+3. I tested my work in 3 different browswers (Chrome, Firefox and Safari). I had to make the height of the text input in the modal popup form to be 42px instead of 36px (the size in the design file) in order to make the appearance consistent across 3 different browsers. Firefox is the only browswer that is acting weird on this. It cuts out the text by padding inwards rather than around the text. I googled this issue and it seems very common. My fix is to make the height bigger.

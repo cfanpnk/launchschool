@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rot13 Cipher</title>
+</head>
+<body>
+  <script type="text/javascript">
+    /*jslint devel: true */
+    'use strict';
+    var CONVERSION_OFFSET = 13;
+    var UPPERCASE_END = 90;
+    var LOWERCASE_END = 122;
+
+    function rotateByChar(char, max) {
+      var asciiNumber = char.charCodeAt();
+      if (asciiNumber + CONVERSION_OFFSET > max) {
+        asciiNumber = asciiNumber - CONVERSION_OFFSET;
+      } else if (asciiNumber + CONVERSION_OFFSET <= max) {
+        asciiNumber = asciiNumber + CONVERSION_OFFSET;
+      }
+      return String.fromCharCode(asciiNumber);
+    }
+    function rot13(string) {
+      var result = '';
+      for (var i = 0; i < string.length; i++) {
+        var rotatedChar;
+        var currentChar = string[i];
+        if (currentChar >= 'A' && currentChar <= 'Z') {
+          rotatedChar = rotateByChar(string[i], UPPERCASE_END);
+        } else if (currentChar >= 'a' && currentChar <= 'z') {
+          rotatedChar = rotateByChar(string[i], LOWERCASE_END);
+        } else {
+          rotatedChar = currentChar;
+        }
+        result += rotatedChar;
+      }
+      return result;
+    }
+
+    console.log(rot13('A') === 'N');
+    console.log(rot13('O') === 'B');
+    console.log(rot13('a') === 'n');
+    console.log(rot13('o') === 'b');
+    console.log(rot13('Teachers open the door, but you must enter by yourself.') === 'Grnpuref bcra gur qbbe, ohg lbh zhfg ragre ol lbhefrys.');
+    console.log(rot13(rot13('Teachers open the door, but you must enter by yourself.')) === 'Teachers open the door, but you must enter by yourself.');
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Operators and Conditionals</title>
+</head>
+<body>
+  <script type="text/javascript">
+    var apples = 3;
+    var bananas = 5;
+    if (apples == bananas) {
+      console.log("1. apples equal to bananas");
+    } else {
+      console.log("1. apples not equal to bananas");
+    }
+
+    bananas = "3"
+    if (apples == bananas) {
+      console.log("2. apples equal to bananas");
+    } else {
+      console.log("2. apples not equal to bananas");
+    }
+
+    if (apples === bananas) {
+      console.log("3. apples stricly equal to bananas");
+    } else if (apples == bananas) {
+      console.log("3. apples euqal to bananas but they are different types")
+    } else {
+      console.log("3. apples not strictly equal to bananas");
+    }
+
+    if (apples === bananas) {
+      console.log("4. apples stricly equal to bananas");
+    } else {
+      if (apples == bananas) {
+        console.log("4. apples euqal to bananas but they are different types")
+      } else {
+        console.log("4. apples not strictly equal to bananas");
+      }
+    }
+
+    apples = 3;
+    bananas = 3;
+    var areEuqal = (apples === bananas);
+    console.log(areEuqal);
+
+    apples = 3;
+    bananas = undefined;
+    var eitherOr = (apples || bananas);
+    console.log(eitherOr);
+
+    bananas = 1;
+    eitherOr = (apples || bananas);
+    console.log('eitherOr: ' + eitherOr);
+    eitherOr = (bananas || apples);
+    console.log('eitherOr: ' + eitherOr);
+
+    var lastName = 'Pan';
+    var familyMessage = lastName === 'Pan' ? "Yor're part of the family!" : "You're not family.";
+    console.log(familyMessage);
+
+  </script>
+</body>
+</html>

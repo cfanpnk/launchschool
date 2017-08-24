@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Odd Numbers</title>
+</head>
+<body>
+  <script type="text/javascript">
+    function isEvenNumber(num) {
+      if (num % 2 === 0) {
+        return true;
+      } else {
+        return false;
+      }
+    }
+
+    function logOddNumbers(num) {
+      for(var i = 1; i <= num; i = i + 2) {
+        if (isEvenNumber(i)) {
+          continue;
+        } else {
+          console.log(i);
+        }
+      }
+    }
+
+    logOddNumbers(19);
+  </script>
+</body>
+</html>

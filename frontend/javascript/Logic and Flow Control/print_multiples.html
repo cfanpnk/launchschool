@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Print Multiples</title>
+</head>
+<body>
+  <script type="text/javascript">
+    function isOddNumber(num) {
+      if (num % 2 === 0) {
+        return false;
+      } else {
+        return true;
+      }
+    }
+    function largestMultiple(num) {
+      return Math.floor(100 / num) * num;
+    }
+
+    function logMultiples(num) {
+      for (var i = largestMultiple(num); i >= num; i--) {
+        if (i % num === 0 && isOddNumber(i)) {
+          console.log(i);
+        }
+      }
+    }
+
+    console.log("Multiples of 17");
+    logMultiples(17);
+
+    console.log("Multiples of 21");
+    logMultiples(21);
+  </script>
+</body>
+</html>

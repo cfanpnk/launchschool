@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Primitive Types and Type Coercion</title>
+</head>
+<body>
+  <script type="text/javascript">
+    var x = Number('13');
+    var y = 9;
+    console.log(x + y); // 22
+    console.log(parseInt(x, 10) * y); // 116
+
+    var npa = 212;
+    var nxx = 555;
+    var num = 1212;
+    console.log(String(npa) + String(nxx) + String(num)); // 2125551212
+
+    var bool = true;
+    var arr = [1, 2, 3];
+    console.log(bool.toString()); // true
+    console.log(arr.toString()); // 1,2,3
+  </script>
+</body>
+</html>

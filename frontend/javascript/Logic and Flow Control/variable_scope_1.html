@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Variable Scopes in JavaScript (1)</title>
+</head>
+<body>
+  <script type="text/javascript">
+    // Problem 1
+    var a = 'outer';
+
+    function testScope() {
+      var a = 'inner';
+      console.log(a); 
+    }
+
+    console.log("Problem 1: ");
+    console.log(a); // outer
+    testScope(); // inner
+    console.log(a); // outer
+
+    // Problem 2
+    var a = 'outer';
+
+    function testScope() {
+      a = 'inner';
+      console.log(a);
+    }
+
+    console.log("Problem 2:");
+    console.log(a); // outer
+    testScope(); // inner
+    console.log(a); // inner
+
+    // Problem 3
+    var basket = 'empty';
+
+    function goShopping() {
+      function shop1() {
+        basket = 'tv';
+      }
+
+      console.log(basket);
+
+      function shop2() {
+        basket = 'computer';
+      }
+
+      function shop3() {
+        var basket = 'play station';
+        console.log(basket);
+      }
+
+      shop1();
+      shop2();
+      shop3();
+
+      console.log(basket);
+    }
+    console.log("Problem 3: ");
+    goShopping();
+    // empty
+    // play station
+    // computer
+  </script>
+</body>
+</html>

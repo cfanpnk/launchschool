@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Todo List</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="stylesheets/site.css" />
+</head>
+<body>
+  <input type="checkbox" id="menu_toggle" />
+  <nav>
+    <div class="all_todos">
+      <ul>
+        <li>
+          <img src="images/list_icon.png" alt="List icon" />
+          <a href="">All Todos</a>
+          <label class="count">18</label>
+        </li>
+        <li class="active">
+          <a href="">02/16</a>
+          <label class="count">8</label>
+        </li>
+        <li>
+          <a href="">03/16</a>
+          <label class="count">2</label>
+        </li>
+        <li>
+          <a href="">04/16</a>
+          <label class="count">1</label>
+        </li>
+        <li>
+          <a href="">05/16</a>
+          <label class="count">1</label>
+        </li>
+        <li>
+          <a href="">06/16</a>
+          <label class="count">6</label>
+        </li>
+      </ul>
+    </div>
+    <div class="completed">
+      <ul>
+        <li>
+          <img src="images/completed_icon.png" alt="List icon" />
+          <a href="">Completed</a>
+        </li>
+        <li><a href="">02/15</a></li>
+        <li><a href="">03/15</a></li>
+        <li><a href="">04/15</a></li>
+        <li><a href="">05/15</a></li>
+        <li><a href="">06/14</a></li>
+      </ul>
+    </div>
+  </nav>
+  <main>
+    <label for="menu_toggle">
+      <img class="menu" src="images/menu_icon.png" alt="Menu icon" />
+    </label>
+    <h3>02/16</h3>
+    <label class="count">8</label>
+    <a class="btn" href=""><img src="images/add_icon.png" alt="Add icon"/>Add new to do</a>
+    <table>
+      <tr>
+        <td class="checkbox">
+          <input class="checkbox" type="submit" name="checkbox1" value="" />
+          <label class="item" for="popup_toggle">Item 1</label>
+        </td>
+        <td class="trash"><a href="#"><img src="images/trash_icon.png" alt="Trash icon"/></a></td>
+      </tr>
+      <tr>
+        <td class="checkbox">
+          <input class="checkbox" type="submit" name="checkbox2" value="" />
+          <label class="item" for="popup_toggle">Item 2</label>
+        </td>
+        <td class="trash"><a href="#"><img src="images/trash_icon.png" alt="Trash icon"/></a></td>
+      </tr>
+      <tr>
+        <td class="checkbox checked">
+          <input class="checkbox" type="submit" name="checkbox3" value="" />
+          <label class="item" for="popup_toggle">Item 3</label>
+        </td>
+        <td class="trash"><a href="#"><img src="images/trash_icon.png" alt="Trash icon"/></a></td>
+      </tr>
+      <tr>
+        <td class="checkbox checked">
+          <input class="checkbox" type="submit" name="checkbox4" value="" />
+          <label class="item" for="popup_toggle">Item 4</label>
+        </td>
+        <td class="trash"><a href="#"><img src="images/trash_icon.png" alt="Trash icon"/></a></td>
+      </tr>
+      <tr>
+        <td class="checkbox checked">
+          <input class="checkbox" type="submit" name="checkbox5" value="" />
+          <label class="item" for="popup_toggle">Item 5</label>
+        </td>
+        <td class="trash"><a href="#"><img src="images/trash_icon.png" alt="Trash icon"/></a></td>
+      </tr>
+      <tr>
+        <td class="checkbox">
+          <input class="checkbox" type="submit" name="checkbox6" value="" />
+          <label class="item" for="popup_toggle">Item 6</label>
+        </td>
+        <td class="trash"><a href="#"><img src="images/trash_icon.png" alt="Trash icon"/></a></td>
+      </tr>
+      <tr>
+         <td class="checkbox">
+          <input class="checkbox" type="submit" name="checkbox7" value="" />
+          <label class="item" for="popup_toggle">Item 7</label>
+        </td>
+        <td class="trash"><a href="#"><img src="images/trash_icon.png" alt="Trash icon"/></a></td>
+      </tr>
+      <tr>
+         <td class="checkbox">
+          <input class="checkbox" type="submit" name="checkbox8" value="" />
+          <label class="item" for="popup_toggle">Item 8</label>
+        </td>
+        <td class="trash"><a href="#"><img src="images/trash_icon.png" alt="Trash icon"/></a></td>
+      </tr>
+      <tr>
+        <td class="checkbox">
+          <input class="checkbox" type="submit" name="checkbox9" value="" />
+          <label class="item" for="popup_toggle">Item 9</label>
+        </td>
+        <td class="trash"><a href="#"><img src="images/trash_icon.png" alt="Trash icon"/></a></td>
+      </tr>
+    </table>
+    <div class="popup">
+      <input type="checkbox" id="popup_toggle"/>
+      <div class="container">
+      </div>
+      <form class="modal" action="#" method="post">
+        <dl>
+          <dt><label>Title</label></dt>
+          <dd><input type="text" name="title" id="title" placeholder="Title" /></dd>
+          <dt><label>Due Date</label></dt>
+          <dd>
+            <div class="select-wrapper">
+              <select name="day" id="day">
+                <option selected disabled>Day</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+              </select>
+            </div>
+            <span>/</span>
+            <div class="select-wrapper">
+              <select name="month" id="month">
+                <option selected disabled>Month</option>
+                <option value="1">January</option>
+                <option value="2">Feburary</option>
+                <option value="3">March</option>
+                <option value="4">Arial</option>
+                <option value="5">May</option>
+                <option value="6">June</option>
+                <option value="7">July</option>
+                <option value="8">August</option>
+                <option value="9">September</option>
+                <option value="10">October</option>
+                <option value="11">November</option>
+                <option value="12">December</option>
+              </select>
+            </div>
+            <span>/</span>
+            <div class="select-wrapper">
+              <select name="year" id="year">
+                <option selected disabled>Year</option>
+                <option>2017</option>
+                <option>2018</option>
+                <option>2019</option>
+                <option>2020</option>
+                <option>2021</option>
+                <option>2022</option>
+                <option>2023</option>
+                <option>2024</option>
+                <option>2025</option>
+                <option>2026</option>
+                <option>2027</option>
+                <option>2028</option>
+                <option>2029</option>
+                <option>2030</option>
+                <option>2031</option>
+                <option>2032</option>
+                <option>2033</option>
+              </select>
+            </div>
+          </dd>
+          <dt>
+            <label id="description">Description</label>
+          </dt>
+          <dd>
+            <textarea placeholder="Description"></textarea>
+          </dd>
+        </dl>
+        <div class="btns">
+          <input type="submit" name="save" id="save" value="Save" />
+          <input type="submit" name="complete" id="complete" value="Mark As Complete" />
+        </div>
+      </form>
+    </div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Functions</title>
+</head>
+<body>
+  <script type="text/javascript">
+
+
+    function average(arr) {
+      return sum(arr) / arr.length;
+    }
+
+    function sum(arr) {
+      var total = 0;
+      var length = arr.length
+      for (var i = 0; i < length; i++) {
+        total += arr[i];
+      }
+      return total;
+    }
+
+    var temperatures = [10, 20, 30, 40, 50];
+    console.log(average(temperatures));
+
+
+  </script>
+</body>
+</html>

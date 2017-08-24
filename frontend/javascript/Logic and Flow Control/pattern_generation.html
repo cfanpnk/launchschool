@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pattern Generation</title>
+</head>
+<body>
+  <script type="text/javascript">
+    // num * num 
+    // 
+    function generatePattern(num) {
+      for (var i = 1; i <= num; i++) {
+        var line = '';
+        for (var j = 1; j <= i; j++) {
+          line += j.toString();
+        }
+        for (var j = 1; j <= num - i; j++) {
+          if (j <= 10) {
+            line += '**';
+          } else {
+            line += '*';
+          }
+        }
+        if (i < 10) {
+          line += '*';
+        }
+        console.log(line);
+      }
+    }
+
+    generatePattern(7);
+    generatePattern(20);
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>String StartsWith</title>
+</head>
+<body>
+<script type="text/javascript">
+  // 1. Get the length of the searchString
+  // 2. Iterate through the original string up to the (length - 1) position of the searchString
+  // 3. Compare each character, if different, return false immediately
+  // 4. If every character matches, then return true
+
+  function startsWith(string, searchString) {
+    var length = searchString.length;
+    for (var i = 0; i < length; i++) {
+      if (string[i] !== searchString[i]) {
+        return false;
+      }
+    }
+    return true;
+  }
+
+  var str = 'We put comprehension and mastery above all else';
+  console.log(startsWith(str, 'We'));       // true
+  console.log(startsWith(str, 'We put'));   // true
+  console.log(startsWith(str, ''));         // true
+  console.log(startsWith(str, 'put'));      // false
+
+  var longerString = 'We put comprehension and mastery above all else!';
+  console.log(startsWith(str, longerString));      // false
+</script>
+</body>
+</html>

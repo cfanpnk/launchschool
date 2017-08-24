@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Splitting a String</title>
+</head>
+<body>
+  <script type="text/javascript">
+    // If it's not the delimitter
+    //  - concatenate to the current result string
+    // It it's the delimitter
+    //  - log the current result string
+    //  - reset the current result string
+    function splitString(string, delimiter) {
+      if (delimiter === undefined) {
+        console.log('ERROR: No delimiter');
+        return;
+      }
+      var result = '';
+      var length = string.length;
+      for (var i = 0; i < length; i++) {
+        if (delimiter === '') {
+          console.log(string[i]);
+        } else if (string[i] === delimiter) {
+          console.log(result);
+          result = '';
+        } else if (string[i] !== delimiter) {
+          result += string[i];
+        }
+      }
+      if (result !== '') {
+        console.log(result);
+      }
+    }
+
+    splitString('abc,123,hello world', ',');
+    splitString('hello');
+    splitString('hello', '');
+    splitString('hello', ';');
+    splitString(';hello;', ';');
+  </script>
+</body>
+</html>

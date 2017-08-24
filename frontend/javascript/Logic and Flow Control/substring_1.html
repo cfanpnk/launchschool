@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Substring (1)</title>
+</head>
+<body>
+<script type="text/javascript">
+  function substr(string, start, length) {
+    if (start < 0) {
+      start = string.length + start;
+    }
+    if (length > string.length) {
+      length = string.length - start;
+    }
+    var result = '';
+    for (var i = 0; i < length; i++) {
+      result += string[start + i];
+    }
+    return result;
+  }
+
+  var string = 'hello world';
+
+  console.log(substr(string, 2, 4));     // "llo "
+  console.log(substr(string, -3, 2));    // "rl"
+  console.log(substr(string, 8, 20));    // "rld"
+  console.log(substr(string, 0, -20));   // ""
+  console.log(substr(string, 0, 0));     // ""
+</script>
+</body>
+</html>

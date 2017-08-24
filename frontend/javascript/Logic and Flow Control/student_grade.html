@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Grade</title>
+</head>
+<body>
+  <script type="text/javascript">
+    function getGrade(avg) {
+      if (avg >= 90) {
+        return 'A';
+      } else if (avg >= 70 && avg < 90) {
+        return 'B';
+      } else if (avg >=50 && avg < 70) {
+        return 'C';
+      } else {
+        return 'F';
+      }
+    }
+
+    var totalScores = 0;
+    for (var i = 1; i <= 3; i++) {
+      var score = window.prompt('Enter score ' + i + ':');
+      totalScores += Number(score);
+    }
+    var average = totalScores / 3;
+    var grade = getGrade(average);
+    console.log('Based on the average of your 3 scores your letter grade is "' + grade + '"');
+  </script>
+</body>
+</html>
