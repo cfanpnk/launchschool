@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title></title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <style>
+         div {
+           border: solid 2px blue;
+           background: lightblue;
+           padding: 2em;
+         }
+      </style>
+      <script>
+      function turnRed(event) {
+        event.stopPropagation();
+        event.currentTarget.style.background = 'red';
+      }
+
+      document.addEventListener('DOMContentLoaded', function() {
+        document.querySelector('.outer').addEventListener('click',  turnRed);    
+        document.querySelector('.inner').addEventListener('click',  turnRed);
+      }); 
+       document.addEventListener('DOMContentLoaded', function() {
+        document.querySelector('a').addEventListener('click', function(event) {
+          event.preventDefault();
+          alert('Following the link was prevented.');
+        });
+      })
+      </script>
+   </head>
+   <body>
+      <div class="outer">
+        <div class="inner">
+        </div>
+      </div>
+      <a href="/">View page</a>
+   </body>
+</html>
