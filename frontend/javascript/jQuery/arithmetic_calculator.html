@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <title>Calculator</title>
+    <meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="arithmetic_calculator.js"></script>
+    <style>
+      html, body {
+         padding: 25px 0;
+         margin: 0;
+         background: #780E24;
+      }
+
+      h1 {
+         font: normal 40px monospace;
+         color: #16997c;
+      }
+
+      main {
+         display: block;
+         max-width: 450px;
+         padding: 20px;
+         margin: 0 auto;
+         background: #ffffff;
+         box-sizing: border-box;
+      }
+
+      fieldset {
+         border: none;
+      }
+
+      input[type="number"] {
+         width: 80px;
+         height: 30px;
+         font: normal 24px monospace;
+         vertical-align: middle;
+         box-sizing: border-box;
+         border: 1px solid #cccccc;
+         border-radius: 4px;
+      }
+
+      input[type="submit"] {
+         width: 30px;
+         height: 30px;
+         border: 1px solid #cccccc;
+         border-radius: 4px;
+         background: linear-gradient(to bottom, #f0f0f0 0%, #d5d5d5 100%);
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <h1 id="result">0</h1>
+
+      <form id="calculator" action="" method="post">
+        <fieldset>
+          <input type="number" name="numerator" id="numerator" value="0" />
+          <select name="operator" id="operator">
+            <option>+</option>
+            <option>-</option>
+            <option>*</option>
+            <option>/</option>
+          </select>
+          <input type="number" name="denominator" id="denominator" value="0" />
+          <input type="submit" value="=" />
+        </fieldset>
+      </form>
+    </main>
+  </body>
+</html>
